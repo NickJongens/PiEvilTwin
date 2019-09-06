@@ -15,7 +15,7 @@ cp -Rf html /var/www/
 chown -R www-data:www-data /var/www/html
 chown root:www-data /var/www/html/.htaccess
 cp -f ConPineHarvesterStart.sh /root/
-crontab -l | { cat; echo "@reboot /root/ConPineHarvesterStart.sh"; } | crontab -
+crontab -l | { cat; echo "@reboot     sudo sleep 15 && sudo sh /root/ConPineHarvesterStart.sh &"; } | crontab -
 chmod +x /root/ConPineHarvesterStart.sh
 cp -f override.conf /etc/apache2/conf-available/
 cd /etc/apache2/conf-enabled
