@@ -54,7 +54,8 @@ Once you've done this, reconnect using your new password, install dependencies a
 
 
 ```
-sudo apt-get install git php dnsmasq macchanger
+sudo apt-get update
+sudo apt-get install git php dnsmasq-base macchanger
 git clone https://github.com/NickJongens/ConPineHarvester
 cd ConPineHarvester
 chmod +x install.sh
