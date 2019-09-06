@@ -41,10 +41,16 @@ mv ssh_host_* default_kali_keys/
 
 dpkg-reconfigure openssh-server
 passwd
+exit
 
 ```
+To reconnect, you'll need to clear the key from your system. on linux and macOS it'll usually give you a command to run e.g:
+```
+ssh-keygen -f "/home/username/.ssh/known_hosts" -R "IP/Hostname of Pi"
+```
+This is performed differently on each system.
 
-Then install dependencies and run the install script :)
+Once you've done this, reconnect using your new password, install dependencies and run the install script:
 
 
 ```
