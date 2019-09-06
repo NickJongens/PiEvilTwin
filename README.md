@@ -90,4 +90,4 @@ Background:
 
 Based on the following project: https://github.com/braindead-sec/rogue-captive 
 Braindead-Sec's version was hard to get working on the latest raspbian, so I thought I'd modify and release it for Kali.
-Unfortunately, Kali doesn't use rc.local so this is using a cron job to run the script on startup
+Unfortunately, Kali doesn't use rc.local so this is using a cron job to run the script on startup. There are a few improvements including support for Windows 10 and also a newer PHP version.
