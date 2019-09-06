@@ -76,12 +76,12 @@ To use an external WiFi Adapter for better range, please change the
 
 ```
 hostapd.conf
-rc.local 
+ConPineHarvesterStart.sh 
 ```
 
 To:
 
-'wlan1' without quotes before running the install script.
+Your WiFi adapter interface name e.g 'wlan1' without quotes before running the install script.
 
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
