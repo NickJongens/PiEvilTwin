@@ -1,4 +1,4 @@
-# ConPineHarvester
+# Con_Pi_neHarvester
 
 # A fake credential harvesting rogue captive portal for Raspberry Pi ZeroW / 3 / 3 B+ using Kali Linux
 
