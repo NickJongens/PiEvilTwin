@@ -25,7 +25,14 @@ sudo dd if=/home/PROFILE NAME/kali-linux-2019.2a-rpi3-nexmon-64.img of=/dev/mmcb
 ```
 
 
-Insert the SD Card into the Pi and ssh to the new system. 
+Insert the SD Card into the Pi and ssh to the new system with the following details:
+
+```
+username: root
+password: toor
+
+```
+
 Please ensure you regenerate the SSH keys and update the password, otherwise you will be hacked.
 
 ```
