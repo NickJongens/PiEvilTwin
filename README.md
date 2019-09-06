@@ -6,10 +6,17 @@ Fresh install of Kali Linux ARM 64-bit:
 Flash the Kali Image to the Pi using Etcher OR follow the steps below if you are using a linux OS to image the SD Card:
 
 ```
+#Download the image
+wget https://images.offensive-security.com/arm-images/kali-linux-2019.3-rpi3-nexmon-64.img.xz
+
+#Extract
+unxz kali-linux-2019.2a-rpi3-nexmon-64.img.xz
+
 #Find the SD Card device name
 sudo fdisk -l
-
 #In my case it was /dev/mmcblk1
+
+#Flash the image to the SD
 sudo dd if=/home/PROFILE NAME/kali-linux-2019.2a-rpi3-nexmon-64.img of=/dev/mmcblk1 status=progress bs=4M
 
 ```
