@@ -62,10 +62,12 @@ chmod +x install.sh
 sudo ./install.sh
 sudo reboot
 ```
-During installation, macchanger may ask whether or not MAC addresses should be changed automatically - choose "No". The startup script in rc.local will perform this task more reliably.
+During installation, macchanger may ask whether or not MAC addresses should be changed automatically - choose "No". The startup script will perform this task more reliably.
 
-After reboot, look for an access point named "Google Free WiFi." Connecting to it from an Apple, Android or Windows device should automatically bring up a captive portal login screen.
-The Windows captive portal is a bit harder to introduce properly. 
+After the reboot, look for an access point named "Google Free WiFi." 
+
+Connecting to it from an Apple, Android or Windows device should automatically bring up a captive portal login screen.
+The Windows captive portal is a bit harder to introduce properly. (BETA)
 It requires a folder called 'redirect' with it's own 'index.html' file redirecting to the root website index.html
 
 Credentials are logged in `/var/www/html/usernames.txt`.
