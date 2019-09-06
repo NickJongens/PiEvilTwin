@@ -30,7 +30,6 @@ Insert the SD Card into the Pi and ssh to the new system with the following deta
 ```
 username: root
 password: toor
-
 ```
 
 Please ensure you regenerate the SSH keys and update the password, otherwise you will be hacked.
