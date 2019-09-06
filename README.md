@@ -57,9 +57,17 @@ It requires a folder called 'redirect' with it's own 'index.html' file redirecti
 Credentials are logged in `/var/www/html/usernames.txt`.
 Website data will be able to be modified under `/var/www/html`
 
+To use an external WiFi Adapter for better range, please change the
+'wlan0' value in the following files:
+
 ```
-To use an external WiFi Adapter for better range, please change the 'wlan0' value in both 'hostapd.conf' and 'rc.local' to 'wlan1' etc before running the install script.
+hostapd.conf
+rc.local 
 ```
+
+To:
+
+'wlan1' without quotes before running the install script.
 
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
