@@ -16,7 +16,7 @@ sudo dd if=/home/PROFILE NAME/kali-linux-2019.2a-rpi3-nexmon-64.img of=/dev/mmcb
 
 ```
 sudo apt-get install git php dnsmasq macchanger
-git clone https://github.com/NickJongens/ComPineHarvester
+git clone https://github.com/NickJongens/ComPineHarvester .
 cd ComPineHarvester
 chmod +x install.sh
 sudo ./install.sh
