@@ -1,4 +1,4 @@
-# ComPineHarvester
+# ConPineHarvester
 
 # A fake credential harvesting rogue captive portal for Raspberry Pi 3 / 3 B+ using Kali Linux
 
@@ -42,8 +42,8 @@ Then install dependencies and run the install script :)
 
 ```
 sudo apt-get install git php dnsmasq macchanger
-git clone https://github.com/NickJongens/ComPineHarvester
-cd ComPineHarvester
+git clone https://github.com/NickJongens/ConPineHarvester
+cd ConPineHarvester
 chmod +x install.sh
 sudo ./install.sh
 sudo reboot
