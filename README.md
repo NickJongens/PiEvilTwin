@@ -86,5 +86,8 @@ To:
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
 
+Background:
+
 Based on the following project: https://github.com/braindead-sec/rogue-captive 
-This is better suited for a Kali Linux install and is better supported under Kali.
+Braindead-Sec's version was hard to get working on the latest raspbian, so I thought I'd modify and release it for Kali.
+Unfortunately, Kali doesn't use rc.local so this is using a cron job to run the script on startup
