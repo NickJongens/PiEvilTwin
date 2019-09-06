@@ -2,8 +2,18 @@
 
 # A fake credential harvesting rogue captive portal for Raspberry Pi 3 / 3 B+ using Kali Linux
 
-Installation after a fresh install of Kali Linux ARM 64-bit:
-	
+Fresh install of Kali Linux ARM 64-bit:
+Flash the Kali Image to the Pi using Etcher OR follow the steps below if you are using a linux OS to image the SD Card:
+
+```
+#Find the SD Card device name
+sudo fdisk -l
+
+#In my case it was /dev/mmcblk1
+sudo dd if=/home/PROFILE NAME/kali-linux-2019.2a-rpi3-nexmon-64.img of=/dev/mmcblk1 status=progress bs=4M
+
+```
+
 ```
 sudo apt-get install git php dnsmasq macchanger
 git clone https://github.com/NickJongens/ComPineHarvester
