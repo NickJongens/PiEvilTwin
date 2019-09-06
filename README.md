@@ -1,6 +1,6 @@
 # ComPineHarvester
 
-# A fake credential harvesting rogue captive portal for Raspberry Pi 3 / 3 B+
+# A fake credential harvesting rogue captive portal for Raspberry Pi 3 / 3 B+ using Kali Linux
 
 Installation after a fresh install of Kali Linux ARM 64-bit:
 	
