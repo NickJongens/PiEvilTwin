@@ -85,3 +85,6 @@ To:
 
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
+
+Based on the following project: https://github.com/braindead-sec/rogue-captive 
+This is better suited for a Kali Linux install and is better supported under Kali.
