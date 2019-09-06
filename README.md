@@ -2,6 +2,9 @@
 
 # A fake credential harvesting rogue captive portal for Raspberry Pi 3 / 3 B+ using Kali Linux
 
+I do NOT take any responsibility for your actions while using any material provided from this repository.
+Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
+
 Fresh install of Kali Linux ARM 64-bit:
 Flash the Kali Image to the Pi using Etcher OR follow the steps below if you are using a linux OS to image the SD Card:
 
@@ -21,6 +24,22 @@ sudo dd if=/home/PROFILE NAME/kali-linux-2019.2a-rpi3-nexmon-64.img of=/dev/mmcb
 
 ```
 
+
+Insert the SD Card into the Pi and ssh to the new system
+Please ensure you regenerate the SSH keys and update the password
+
+```
+cd /etc/ssh/
+mkdir default_kali_keys
+mv ssh_host_* default_kali_keys/
+
+dpkg-reconfigure openssh-server
+
+```
+
+Then install dependencies and run the install script :)
+
+
 ```
 sudo apt-get install git php dnsmasq macchanger
 git clone https://github.com/NickJongens/ComPineHarvester
@@ -29,13 +48,14 @@ chmod +x install.sh
 sudo ./install.sh
 sudo reboot
 ```
-During installation, macchanger will ask whether or not MAC addresses should be changed automatically - choose "No". The startup script in rc.local will perform this task more reliably.
+During installation, macchanger may ask whether or not MAC addresses should be changed automatically - choose "No". The startup script in rc.local will perform this task more reliably.
 
 After reboot, look for an access point named "Google Free WiFi." Connecting to it from an Apple, Android or Windows device should automatically bring up a captive portal login screen.
 The Windows captive portal is a bit harder to introduce properly. 
 It requires a folder called 'redirect' with it's own 'index.html' file redirecting to the root website index.html
 
 Credentials are logged in `/var/www/html/usernames.txt`.
+Website data will be able to be modified under `/var/www/html`
 
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
