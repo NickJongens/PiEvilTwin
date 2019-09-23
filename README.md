@@ -5,6 +5,10 @@
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
 
+To donate, please send me Ethereum :)
+Address:
+0xD3e5a9d8f07040163e3b6c1949573350412A5d2E
+
 Fresh install of Kali Linux ARM 64-bit:
 Flash the Kali Image to the Pi using Etcher OR follow the steps below if you are using a linux OS to image the SD Card:
 
