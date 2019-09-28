@@ -9,6 +9,15 @@ To donate, please send me Ethereum :)
 Address:
 0xD3e5a9d8f07040163e3b6c1949573350412A5d2E
 
+You will need:
+
+A Raspberry Pi 3 or later with wireless
+Software:
+Balena Etcher: https://www.balena.io/etcher/
+Kali Linux 2019.3 for Raspberry Pi 3,3+: https://images.offensive-security.com/arm-images/kali-linux-2019.3-rpi3-nexmon-64.img.xz
+
+
+
 Fresh install of Kali Linux ARM 64-bit:
 Flash the Kali Image to the Pi using Etcher OR follow the steps below if you are using a linux OS to image the SD Card:
 
