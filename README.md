@@ -1,13 +1,9 @@
-# Con_Pi_neHarvester
+# PiEvilTwin Portable Access Point
 
 # A fake credential harvesting rogue captive portal for Raspberry Pi ZeroW / 3 / 3 B+ using Kali Linux
 
 I do NOT take any responsibility for your actions while using any material provided from this repository.
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
-
-To donate, please send me Ethereum :)
-Address:
-0xD3e5a9d8f07040163e3b6c1949573350412A5d2E
 
 Software:
 Balena Etcher: 
@@ -69,8 +65,8 @@ Once you've done this, reconnect using your new password, install dependencies a
 ```
 sudo apt-get update
 sudo apt-get install -y git php dnsmasq dnsmasq-base macchanger hostapd
-git clone https://github.com/NickJongens/ConPineHarvester
-cd ConPineHarvester
+git clone https://github.com/NickJongens/PiEvilTwin
+cd PiEvilTwin
 chmod +x install.sh
 sudo ./install.sh
 sudo reboot
@@ -91,7 +87,7 @@ To use an external WiFi Adapter for better range, please change the
 
 ```
 hostapd.conf
-ConPineHarvesterStart.sh 
+PiEvilTwin.sh 
 ```
 
 To:
