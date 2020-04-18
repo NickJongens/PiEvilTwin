@@ -4,6 +4,7 @@ service apache2 start
 sleep 1
 ifconfig wlan0 down
 macchanger -A wlan0
+sleep 1 
 ifconfig wlan0 up
 sleep 1
 hostapd -B /etc/hostapd/hostapd.conf
@@ -17,6 +18,7 @@ iptables -t nat -A PREROUTING -i br0 -p udp -m udp --dport 53 -j DNAT --to-desti
 iptables -t nat -A PREROUTING -i br0 -p tcp -m tcp --dport 80 -j DNAT --to-destination 10.1.1.1:80
 iptables -t nat -A PREROUTING -i br0 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.1.1.1:80
 iptables -t nat -A POSTROUTING -j MASQUERADE
+sleep 5
 service dnsmasq start
 sleep 5
 service dnsmasq restart
