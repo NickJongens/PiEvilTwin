@@ -87,7 +87,7 @@ To use an external WiFi Adapter for better range, please change the
 
 ```
 hostapd.conf
-PiEvilTwin.sh 
+PiEvilTwinStart.sh 
 ```
 
 To:
