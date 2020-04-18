@@ -18,4 +18,6 @@ iptables -t nat -A PREROUTING -i br0 -p tcp -m tcp --dport 80 -j DNAT --to-desti
 iptables -t nat -A PREROUTING -i br0 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.1.1.1:80
 iptables -t nat -A POSTROUTING -j MASQUERADE
 service dnsmasq start
+sleep 5
+service dnsmasq restart
 exit 0
