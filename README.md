@@ -6,6 +6,7 @@ I do NOT take any responsibility for your actions while using any material provi
 Performing attacks on public users is illegal and should require permission from all users within the radius of the network.
 
 Software:
+
 Balena Etcher: 
 https://www.balena.io/etcher/
 
