@@ -74,7 +74,10 @@ sudo reboot
 ```
 During installation, macchanger may ask whether or not MAC addresses should be changed automatically - choose "No". The startup script will perform this task more reliably.
 
-After the reboot, look for an access point named "Google Free WiFi." 
+If you receive a similar message with "Restart services during package upgrades without asking?" - choose "Yes".
+This is required for cron to work.
+
+After the reboot, wait 30 seconds and then look for an access point named "Google Free WiFi." 
 
 Connecting to it from an Apple, Android or Windows device should automatically bring up a captive portal login screen.
 The Windows captive portal is a bit harder to introduce properly. (BETA)
