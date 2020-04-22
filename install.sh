@@ -19,7 +19,7 @@ chown -R www-data:www-data /var/www/html
 chown root:www-data /var/www/html/.htaccess
 echo "Copying startup script..."
 cp -f PiEvilTwinStart.sh /root/
-crontab -l | { cat; echo "@reboot     sudo sleep 15 && sudo sh /root/PiEvilTwinStart.sh &"; } | crontab -
+crontab -l | { cat; echo "@reboot     sudo sleep 10 && sudo sh /root/PiEvilTwinStart.sh && sudo service dnsmasq restart &"; } | crontab -
 echo "Setting up permissions..."
 chmod +x /root/PiEvilTwinStart.sh
 echo "Setting up Apache Config..."
