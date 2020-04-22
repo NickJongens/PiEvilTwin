@@ -19,10 +19,9 @@ iptables -t nat -A PREROUTING -i br0 -p udp -m udp --dport 53 -j DNAT --to-desti
 iptables -t nat -A PREROUTING -i br0 -p tcp -m tcp --dport 80 -j DNAT --to-destination 10.1.1.1:80
 iptables -t nat -A PREROUTING -i br0 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.1.1.1:80
 iptables -t nat -A POSTROUTING -j MASQUERADE
-sleep 4
+sleep 2
 service dnsmasq start
-sleep 4
+sleep 2
 service dnsmasq restart
 sleep 4
-service dnsmasq restart
 exit 0
