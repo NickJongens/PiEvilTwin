@@ -11,8 +11,7 @@ Balena Etcher:
 https://www.balena.io/etcher/
 
 Kali Linux 2019.3 for Raspberry Pi 3,3+:
-https://images.offensive-security.com/arm-images/kali-linux-2019.3-rpi3-nexmon-64.img.xz
-
+https://images.kali.org/arm-images/kali-linux-2021.1-rpi4-nexmon-64.img.xz
 
 
 Fresh install of Kali Linux ARM 64-bit:
